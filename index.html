@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natalia Salete - Full Stack Developer & ERP Consultant</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+    />
+    <!-- AOS Animation -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Theme Controls -->
+    <div class="theme-controls">
+      <button class="control-btn" id="themeToggle" title="Alternar Tema">
+        <i class="bi bi-moon-fill"></i>
+      </button>
+      <button class="control-btn" id="langToggle" title="Change Language">
+        <span id="langFlag">🇧🇷</span>
+      </button>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">NS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home" data-i18n="nav.home">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" data-i18n="nav.about">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tech" data-i18n="nav.tech"
+                >Tecnologias</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" data-i18n="nav.projects"
+                >Projetos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" data-i18n="nav.contact"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="row align-items-center">
+          <div class="col-lg-8" data-aos="fade-right">
+            <h1 data-i18n="hero.greeting">Olá, eu sou<br />Natalia Salete</h1>
+            <p class="lead" data-i18n="hero.title">
+              Desenvolvedora Full Stack & Consultora ERP
+            </p>
+            <p class="typing-text">
+              <i class="bi bi-code-slash"></i>
+              <span data-i18n="hero.tech"
+                >ADVPL • React.js • TypeScript • Next.js</span
+              >
+            </p>
+            <div class="mt-4">
+              <a
+                href="#projects"
+                class="btn btn-primary-custom me-3"
+                data-i18n="hero.btn1"
+                >Ver Projetos</a
+              >
+              <a
+                href="#contact"
+                class="btn btn-outline-custom"
+                data-i18n="hero.btn2"
+                >Contato</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2 data-i18n="about.title">Sobre Mim</h2>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="about-info">
+              <p class="lead" data-i18n="about.lead">
+                Sou uma desenvolvedora apaixonada por tecnologia e inovação, com
+                experiência sólida em sistemas ERP e desenvolvimento web
+                moderno.
+              </p>
+              <p data-i18n="about.description">
+                Trabalho com TOTVS Protheus e ADVPL, criando e adaptando módulos
+                de ERP, além de estar constantemente aprimorando minhas
+                habilidades em tecnologias web modernas como React, TypeScript e
+                Next.js.
+              </p>
+
+              <div class="mt-4">
+                <div class="info-item">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <div>
+                    <strong data-i18n="about.location.label"
+                      >Localização:</strong
+                    ><br />
+                    <span data-i18n="about.location.value"
+                      >Monte Carmelo, Minas Gerais, Brasil</span
+                    >
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="bi bi-briefcase-fill"></i>
+                  <div>
+                    <strong data-i18n="about.areas.label"
+                      >Áreas de Atuação:</strong
+                    ><br />
+                    <span data-i18n="about.areas.value"
+                      >Desenvolvimento Full Stack, Consultoria ERP, Sistemas
+                      TOTVS</span
+                    >
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="bi bi-heart-fill"></i>
+                  <div>
+                    <strong data-i18n="about.interests.label"
+                      >Interesses:</strong
+                    ><br />
+                    <span data-i18n="about.interests.value"
+                      >Inovação tecnológica, Soluções criativas e
+                      eficientes</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="text-center">
+              <div
+                style="
+                  width: 300px;
+                  height: 300px;
+                  margin: 0 auto;
+                  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <img
+                  src="https://avatars.githubusercontent.com/u/135389319?v=4"
+                  alt="Foto GitHub"
+                  style="
+                    width: 280px;
+                    height: 280px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="tech" class="skills-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2 data-i18n="tech.title">Tecnologias & Ferramentas</h2>
+        </div>
+        <div class="row g-4">
+          <!-- Programming Languages -->
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="skill-card">
+              <i class="bi bi-code-square"></i>
+              <h4 data-i18n="tech.languages">Linguagens de Programação</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">ADVPL</span>
+                <span class="skill-tag">Kotlin</span>
+                <span class="skill-tag">Go</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="skill-card">
+              <i class="bi bi-palette"></i>
+              <h4 data-i18n="tech.frontend">Frontend Development</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">Tailwind CSS</span>
+                <span class="skill-tag">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="skill-card">
+              <i class="bi bi-server"></i>
+              <h4 data-i18n="tech.backend">Backend Development</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Node.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="skill-card">
+              <i class="bi bi-database"></i>
+              <h4 data-i18n="tech.databases">Databases</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Oracle</span>
+                <span class="skill-tag">SQL Server</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="500">
+            <div class="skill-card">
+              <i class="bi bi-tools"></i>
+              <h4 data-i18n="tech.tools">Ferramentas & Plataformas</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">TOTVS Protheus</span>
+                <span class="skill-tag">Power BI</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Arduino</span>
+                <span class="skill-tag">KNIME</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">Android Studio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2 data-i18n="projects.title">Projetos em Destaque</h2>
+        </div>
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="project-card">
+              <div class="project-img">
+                <i class="bi bi-bag-heart-fill"></i>
+              </div>
+              <div class="project-content">
+                <h4 data-i18n="projects.project1.title">
+                  L'Essence Beauté - Loja Virtual
+                </h4>
+                <p
+                  class="project-description"
+                  data-i18n="projects.project1.description"
+                >
+                  Loja virtual focada em oferecer uma experiência agradável para
+                  a compra de produtos de beleza. Interface amigável e
+                  responsiva desenvolvida com tecnologias web modernas.
+                </p>
+                <div class="project-tech">
+                  <span class="project-tech-badge">HTML5</span>
+                  <span class="project-tech-badge">CSS3</span>
+                  <span class="project-tech-badge">JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/natsalete/L-Essence-Beaute-Loja-Virtual"
+                    target="_blank"
+                    class="project-link project-link-github"
+                  >
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                  <a
+                    href="https://natalia-l-essence-beaute-loja-virtual.vercel.app/"
+                    target="_blank"
+                    class="project-link project-link-demo"
+                  >
+                    <i class="bi bi-box-arrow-up-right"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="project-card">
+              <div class="project-img">
+                <i class="bi bi-check2-square"></i>
+              </div>
+              <div class="project-content">
+                <h4 data-i18n="projects.project2.title">Minhas Tarefas</h4>
+                <p
+                  class="project-description"
+                  data-i18n="projects.project2.description"
+                >
+                  Aplicação web para gerenciamento de tarefas construída com
+                  React. Permite organizar atividades de forma eficiente com
+                  interface moderna e intuitiva.
+                </p>
+                <div class="project-tech">
+                  <span class="project-tech-badge">React</span>
+                  <span class="project-tech-badge">JavaScript</span>
+                  <span class="project-tech-badge">CSS</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/natsalete/Minhas-Tarefas"
+                    target="_blank"
+                    class="project-link project-link-github"
+                  >
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                  <a
+                    href="https://minhas-tarefas-five.vercel.app/"
+                    target="_blank"
+                    class="project-link project-link-demo"
+                  >
+                    <i class="bi bi-box-arrow-up-right"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="project-card">
+              <div class="project-img">
+                <i class="bi bi-shield-lock-fill"></i>
+              </div>
+              <div class="project-content">
+                <h4 data-i18n="projects.project3.title">
+                  Firebase Authentication
+                </h4>
+                <p
+                  class="project-description"
+                  data-i18n="projects.project3.description"
+                >
+                  Aplicativo Android moderno com sistema completo de
+                  autenticação usando Firebase. Suporta registro, login com
+                  email/senha e login com Google, seguindo as melhores práticas
+                  Android.
+                </p>
+                <div class="project-tech">
+                  <span class="project-tech-badge">Kotlin</span>
+                  <span class="project-tech-badge">Android</span>
+                  <span class="project-tech-badge">Firebase</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/natsalete/Firebase-Auth"
+                    target="_blank"
+                    class="project-link project-link-github"
+                  >
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2 data-i18n="contact.title">Entre em Contato</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div>
+                  <h5 data-i18n="contact.location.label">Localização</h5>
+                  <p data-i18n="contact.location.value">
+                    Monte Carmelo, Minas Gerais, Brasil
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="bi bi-github"></i>
+                <div>
+                  <h5>GitHub</h5>
+                  <p>
+                    <a
+                      href="https://github.com/natsalete"
+                      target="_blank"
+                      style="color: var(--primary-color); text-decoration: none"
+                      >github.com/natsalete</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="bi bi-linkedin"></i>
+                <div>
+                  <h5>LinkedIn</h5>
+                  <p>
+                    <a
+                      href="https://www.linkedin.com/in/natalia-salete-rodrigues"
+                      target="_blank"
+                      style="color: var(--primary-color); text-decoration: none"
+                      >Natalia Salete Rodrigues</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <div class="social-links">
+                  <a
+                    href="https://github.com/natsalete"
+                    target="_blank"
+                    class="social-link"
+                    title="GitHub"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/natalia-salete-rodrigues"
+                    target="_blank"
+                    class="social-link"
+                    title="LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a
+                    href="mailto: natsalete20@gamil.com"
+                    class="social-link"
+                    title="Email"
+                  >
+                    <i class="bi bi-envelope-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Natalia Salete.
+          <span data-i18n="footer.made">Feito com</span>
+          <i class="bi bi-heart-fill" style="color: var(--primary-color)"></i>
+          <span data-i18n="footer.tech">e tecnologia</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
